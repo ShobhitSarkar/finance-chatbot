@@ -1,49 +1,44 @@
 {
     "intents": [
       {
-        "tag": "greetings",
-        "patterns": ["Hey", "Hello", "What's up?", "Hi", "How's it going?"],
-        "responses": ["How can I help you with your portfolio today?", "Welcome! What would you like to do with your investments?", "Hello! How can I assist you with your financial needs?"]
+        "tag": "greeting",
+        "patterns": ["Hi", "Hello", "Hey", "How are you"],
+        "responses": ["Hello! How can I help you with your portfolio today?"]
       },
       {
         "tag": "add_portfolio",
-        "patterns": ["Add stock to portfolio", "Buy shares", "Invest in new stock", "Purchase stocks", "Add to my investments"],
-        "responses": ["Sure, let's add a stock to your portfolio. Which stock do you want to add?", "I can help you add stocks. What's the ticker symbol of the stock you want to buy?"]
+        "patterns": ["Add stock", "Buy shares", "Invest in new stock"],
+        "responses": ["Sure, let's add a stock to your portfolio."]
       },
       {
         "tag": "remove_portfolio",
-        "patterns": ["Sell stock", "Remove shares from portfolio", "Sell shares", "Reduce investment"],
-        "responses": ["I can help you sell stocks. Which stock do you want to sell?", "Sure, let's remove some shares. What's the ticker symbol of the stock you want to sell?"]
+        "patterns": ["Sell stock", "Remove shares", "Sell shares"],
+        "responses": ["Okay, let's remove some stocks from your portfolio."]
       },
       {
         "tag": "show_portfolio",
-        "patterns": ["Show my portfolio", "What stocks do I own?", "Display my investments", "List my holdings"],
-        "responses": ["I'll display your portfolio for you now.", "Here's a summary of your current stock holdings:"]
+        "patterns": ["Show portfolio", "Display holdings", "What stocks do I own"],
+        "responses": ["Here's your current portfolio:"]
       },
       {
         "tag": "portfolio_worth",
-        "patterns": ["What's my portfolio worth?", "Total value of investments", "How much are my stocks worth?"],
-        "responses": ["I'll calculate the current worth of your portfolio.", "Let me fetch the latest prices and compute your portfolio's value."]
+        "patterns": ["Portfolio value", "How much is my portfolio worth", "Total value"],
+        "responses": ["Let me calculate the current value of your portfolio."]
       },
       {
         "tag": "portfolio_gains",
-        "patterns": ["Calculate my gains", "How much have I earned?", "Portfolio performance", "Investment returns"],
-        "responses": ["I can help you calculate your portfolio gains. What date would you like to use for comparison?", "Sure, let's check your investment performance. Please provide a starting date for the calculation."]
+        "patterns": ["Portfolio gains", "How much have I earned", "Profit"],
+        "responses": ["I'll calculate your portfolio gains for you."]
       },
       {
         "tag": "plot_chart",
-        "patterns": ["Show stock chart", "Plot stock price", "Display stock graph", "Visualize stock performance"],
-        "responses": ["I can create a chart for you. Which stock would you like to see?", "Sure, I'll plot a chart. What's the ticker symbol of the stock you're interested in?"]
+        "patterns": ["Show chart", "Plot stock", "Display graph"],
+        "responses": ["Sure, I can plot a chart for you."]
       },
       {
-        "tag": "bye",
-        "patterns": ["Goodbye", "Exit", "Quit", "Close", "End session"],
-        "responses": ["Goodbye! Have a great day.", "Thank you for using the financial assistant. Goodbye!"]
-      },
-      {
-        "tag": "help",
-        "patterns": ["Help", "What can you do?", "List functions", "Available commands"],
-        "responses": ["I can help you manage your portfolio, check stock values, calculate gains, and plot charts. What would you like to do?", "Here are some things I can do: add/remove stocks, show your portfolio, calculate worth and gains, and plot stock charts. How can I assist you?"]
+        "tag": "goodbye",
+        "patterns": ["Goodbye", "Bye", "See you later"],
+        "responses": ["Goodbye! Have a great day."]
       }
     ]
   }

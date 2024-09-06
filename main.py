@@ -1,4 +1,4 @@
-from neuralintents import GenericAssistant 
+from neuralintents import BasicAssistant
 import matplotlib.pyplot as plt 
 import pandas as pd 
 import pandas_datareader as web 
@@ -119,9 +119,10 @@ mappings = {
     'bye': bye
 
 }
-assistant = GenericAssistant('intents.json', mappings, "financial_assitant_model")
+assistant = BasicAssistant('intents.json', method_mappings= mappings)
 
-assistant.train_model()
+
+assistant.fit_model(epochs=50)
 assistant.save_model(); 
 
 while True:
