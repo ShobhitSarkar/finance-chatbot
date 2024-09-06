@@ -1,0 +1,10 @@
+{
+    "intents":[
+        {
+            "tag": "greetings", 
+            "patterns": ["Hey", "Hello", "What's up ?", "Hi", "How's it going ? "],
+            "reponses": ["How can I help you today?", "What can I do for you ?", "What are you looking for ?", "Hey!"]
+
+        }
+    ]
+}
